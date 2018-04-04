@@ -21,6 +21,8 @@ btn4.addEventListener("click", function () { "use strict"; window.alert("Button 
 
 //STEP 5
 
+//See head section of practice.html
+
 //STEP 6
 var link6 = window.document.getElementById("redirect");
 link6.setAttribute("href", "#");
@@ -38,8 +40,25 @@ btn7.addEventListener("click", function () {
 //STEP 8
 var btn8 = window.document.getElementById("step8");
 btn8.addEventListener("click", function () {
+    "use strict";
     window.open("newpage.html", "newpage", "width=300,height=300");
 });
 //STEP 9
+var btnStart = window.document.getElementById("step9-start");
+var btnStop = window.document.getElementById("step9-stop");
+var msg = "Learning JavaScript is fun!";
+var x;
+function printMessage() {  "use strict"; window.console.log(msg); }
 
+btnStart.addEventListener("click", function () {
+    "use strict";
+    x = window.setInterval(printMessage(), 1000);
+});
+btnStop.addEventListener("click", function () {
+    "use strict";
+    window.clearInterval(x);
+});
 //STEP 10
+var btn10 = window.document.getElementById("step10");
+var select10 = window.document.getElementById("step10-select");
+btn10.addEventListener("click", function () { "use strict"; window.alert("Button 10: " + select10.value + " selected!"); });

@@ -1,0 +1,5 @@
+#employees tr:nth-child(even) {background: #D1DEF1}
+#employees tr:nth-child(odd) {background: #CAE0F6}
+#employees tr:nth-child(1) {background: white; font-weight:bold}
+#employees tr:nth-child(2) {background: #5B9BD2; color:white}
+input[type="button"] {background: #5B9BD2; color:white }
