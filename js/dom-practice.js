@@ -43,21 +43,16 @@ btn8.addEventListener("click", function () {
     "use strict";
     window.open("newpage.html", "newpage", "width=300,height=300");
 });
-//STEP 9
-var btnStart = window.document.getElementById("step9-start");
-var btnStop = window.document.getElementById("step9-stop");
-var msg = "Learning JavaScript is fun!";
-var x;
-function printMessage() {  "use strict"; window.console.log(msg); }
 
-btnStart.addEventListener("click", function () {
+//STEP 9
+var i;
+function interval() {
     "use strict";
-    x = window.setInterval(printMessage(), 1000);
-});
-btnStop.addEventListener("click", function () {
-    "use strict";
-    window.clearInterval(x);
-});
+    i = setInterval(function () {
+        window.console.log("Learning JavaScript is fun!");
+    }, 1000);
+}
+
 //STEP 10
 var btn10 = window.document.getElementById("step10");
 var select10 = window.document.getElementById("step10-select");
